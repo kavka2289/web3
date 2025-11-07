@@ -1,0 +1,2 @@
+RPC_URL = "https://polygon-rpc.com"
+CONTRACT_ADDRESS = "0x1a9b54a3075119f1546c52ca0940551a6ce5d2d0"
