@@ -34,6 +34,6 @@ def get_balance(user_address):
         return f"Ошибка: {str(e)}"
 
 
-address = "0x6c0E888e4872d4388A726cd245B3F4516A529cDB"
+address = "0x51f1774249Fc2B0C2603542Ac6184Ae1d048351d"
 result = get_balance(address)
 print(f"Вывод: {result}")
