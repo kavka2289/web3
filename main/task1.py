@@ -33,7 +33,12 @@ def get_balance(user_address):
     except Exception as e:
         return f"Ошибка: {str(e)}"
 
-
-address = "0x51f1774249Fc2B0C2603542Ac6184Ae1d048351d"
-result = get_balance(address)
-print(f"Вывод: {result}")
+def main():
+    user_input = 'get_balance_batch ["0x51f1774249Fc2B0C2603542Ac6184Ae1d048351d", "0x4830AF4aB9cd9E381602aE50f71AE481a7727f7C"]'
+    addresses = user_input.split(" ",1)[1]
+    print(addresses.split(", "))
+    for address in addresses.strip("[]").replace('"', '').split(", "):
+        result = get_balance(address)
+        print(result)
+if __name__ == "__main__":
+    main()
