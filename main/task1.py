@@ -7,9 +7,7 @@ def load_abi():
         return json.load(f)
 
 def get_balance(user_address):
-    """Получить баланс токена на Polygon"""
     try:
-        # Подключение
         w3 = Web3(Web3.HTTPProvider(RPC_URL))
         if not w3.is_connected():
             return "Ошибка подключения к Polygon"
